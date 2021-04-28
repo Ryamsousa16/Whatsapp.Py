@@ -39,4 +39,16 @@ if question in 'N':
     – Santa Catarina (47, 48 e 49)''')
     ddd = int(input("Qual o DDD???\n: "))
 
+number = int(input('Número: ').replace('-', ''))
+result = str((f'+55{ddd}', number))
+
+message = str(input('Digite a mensagem que deseja enviar: '))
+
+hour = int(input("Que horas esta mensagem será enviada (exemplo) : "))
+
+minutes = int(input('''Qual minuto deseja que a mensagem seja enviada???
+    : '''))
+
+kit.sendwhatmsg(result, message, hour, minutes)
+
 
