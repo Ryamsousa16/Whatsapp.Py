@@ -1,8 +1,7 @@
 import pywhatkit as kit
 import time
 
-question = str(input('''Você sabe o DDD da pessoa??? S/N
-: ''')).upper().strip()
+question = str(input("Você sabe o DDD da pessoa??? S/N\n: ")).upper().strip()
 
 if question in 'S':
     ddd = int(input('DDD: '))
@@ -46,8 +45,7 @@ message = str(input('Digite a mensagem que deseja enviar: '))
 
 hour = int(input("Que horas esta mensagem será enviada (exemplo) : "))
 
-minutes = int(input('''Qual minuto deseja que a mensagem seja enviada???
-    : '''))
+minutes = int(input("Qual minuto deseja que a mensagem seja enviada???\n: "))
 
 kit.sendwhatmsg(result, message, hour, minutes)
 
