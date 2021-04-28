@@ -48,5 +48,3 @@ hour = int(input("Que horas esta mensagem será enviada (exemplo) : "))
 minutes = int(input("Qual minuto deseja que a mensagem seja enviada???\n: "))
 
 kit.sendwhatmsg(result, message, hour, minutes)
-
-
